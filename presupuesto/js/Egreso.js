@@ -5,14 +5,13 @@ class Egreso extends Dato {
     static contadorEgresos = 0;
 
     _data = new WeakMap();
-
+    
     constructor(descripcion, valor) {
         super(descripcion, valor);
-        this.contadorEgresos++;
-
         this._data.set(this, {
-            id: this.contadorEgresos
+            id: Egreso.contadorEgresos
         });
+        Egreso.contadorEgresos++;
     }
 
     get id() {

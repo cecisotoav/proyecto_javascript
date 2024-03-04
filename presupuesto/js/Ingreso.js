@@ -8,10 +8,10 @@ class Ingreso extends Dato {
 
     constructor(descripcion, valor) {
         super(descripcion, valor);
-        this.contadorIngresos++;
         this._data.set(this, {
-            id: this.contadorIngresos
+            id: Ingreso.contadorIngresos
         });
+        Ingreso.contadorIngresos++;
     }
 
     get id() {
