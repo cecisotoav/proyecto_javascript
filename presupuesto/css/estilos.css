@@ -256,3 +256,12 @@ h2 {
 .elemento:hover .elemento_eliminar--btn { display: block; }
 .elemento:hover .elemento_valor { transform: translateX(-20px); }
 .elemento:hover .elemento_porcentaje { transform: translateX(-20px); }
+
+.footer{
+    background-color: white;
+    color:#FF5049;
+    height: 80;
+    position: absolute;
+    bottom: 0;
+}
+    

@@ -12,8 +12,8 @@ class Dato {
         return this._private.get(this).descripcion;
     }
 
-    set description(descripcion) {
-        this._private.set(description, descripcion);
+    set descripcion(descripcion) {
+        this._private.set(descripcion, descripcion);
     }
 
     get valor() {
