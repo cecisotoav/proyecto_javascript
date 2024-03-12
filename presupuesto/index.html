@@ -22,7 +22,6 @@ Creado por: CSA-->
 </head>
 
 <body onload="cargarApp()">
-    <header>
         <div class="cabecero">
             <div class="presupuesto">
                 <div class="presupuesto_titulo">Presupuesto Disponible
@@ -46,7 +45,6 @@ Creado por: CSA-->
                 </div>
             </div>
         </div>
-    </header>
 
     <form id="forma" onsubmit="return false">
         <!--Crea un div con la clase agregar-->
@@ -57,7 +55,7 @@ Creado por: CSA-->
                     <option value="egresos">-</option>
                 </select>
                 <input type="text" class="agregar_descripcion" id="descripcion" placeholder="Agregar Descripción"/>
-                <input type="number" class="agregar_valor" id="valor" step="any">
+                <input type="number" class="agregar_valor" id="valor" step="any"placeholder="Valor">
                 <button class="agregar_btn" onclick="agregarDato()">
                     <i class="bi bi-check2-circle"></i>
                 </button>

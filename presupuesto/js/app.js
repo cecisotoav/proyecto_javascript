@@ -11,6 +11,8 @@ const egresoTotal = [
     new Egreso("Ropa", 800)
 ];
 
+
+    
 const cargarCabecero = () => {
     const egresos = calculaEgresos();
     const ingresos = calculaIngresos();
@@ -31,6 +33,7 @@ const calculaEgresos = () => {
     });
     return totalEgresos;
 }
+
 
 // esta funcion en la practica el nombre original es totalIngresos
 // el nombre se modifico para tener una mejor descripcion de lo que realmente hace
@@ -97,6 +100,7 @@ const crearEgresoHTML = (egreso) => {
     egresoHTML += "    <div class=\"elemento_descripcion\">" + egreso.descripcion + "</div>\n";
     egresoHTML += "        <div class=\"derecha limpiarEstilos\">\n";
     egresoHTML += "            <div class=\"elemento_valor\">" + formatoMoneda(egreso.valor) + "</div>\n";
+    egresoHTML += "            <div id=\"porcentaje\" class=\"elemento_porcentaje\">" +  formatoPorcentaje(egreso.valor/calculaEgresos()) + "</div>\n";
     egresoHTML += "            <div class=\"elemento_eliminar\">\n";
     egresoHTML += "            <button class=\"elemento_eliminar--btn\" onclick=\"eliminaEgreso(" + egreso.id + ")\">\n";
     egresoHTML += "                 <i class=\"bi bi-x-circle-fill\"></i>\n";

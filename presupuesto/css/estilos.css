@@ -177,11 +177,13 @@ body {
     float: left;
     width: 370px;
     margin-right: 70px;
+    margin-left: 20px;
 }
 
 .egreso {
     float: left;
     width: 370px;
+    margin-left: 20px;
 }
 
 h2 {
@@ -264,4 +266,14 @@ h2 {
     position: absolute;
     bottom: 0;
 }
-    
+
+@media screen and (max-width: 768px){
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }    
+    .ingreso,
+    .egreso {
+        margin-bottom: 20px;
+    }
+}
